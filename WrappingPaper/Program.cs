@@ -63,9 +63,9 @@ namespace WrappingPaper
 
     public class PresentBox
     {
-        public int Height { get; }
-        public int Length { get; }
-        public int Width { get; }
+        public int Height { get; private set; }
+        public int Length { get; private set; }
+        public int Width { get; private set; }
 
         public PresentBox(int height, int length, int width)
         {
