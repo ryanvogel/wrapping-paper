@@ -1,0 +1,6 @@
+C:\git.repos\net-challenges\wrapping-paper\WrappingPaper\bin\Debug\WrappingPaper.exe.config
+C:\git.repos\net-challenges\wrapping-paper\WrappingPaper\bin\Debug\WrappingPaper.exe
+C:\git.repos\net-challenges\wrapping-paper\WrappingPaper\bin\Debug\WrappingPaper.pdb
+C:\git.repos\net-challenges\wrapping-paper\WrappingPaper\obj\Debug\WrappingPaper.csprojResolveAssemblyReference.cache
+C:\git.repos\net-challenges\wrapping-paper\WrappingPaper\obj\Debug\WrappingPaper.exe
+C:\git.repos\net-challenges\wrapping-paper\WrappingPaper\obj\Debug\WrappingPaper.pdb
