@@ -10,7 +10,7 @@ namespace WrappingPaper
         static void Main(string[] args)
         {
             var dataString = InputData.GetData();
-            var formatter = new DataFormatter(dataString);
+            var formatter = new PresentBoxDataFormatter(dataString);
             var presents = formatter.CreatePresents();
 
             var neededSqFt = 0;
@@ -27,7 +27,7 @@ namespace WrappingPaper
 
     public static class InputData
     {
-        private static string _baseUrl = "http://ryanvogel.github.io/";
+        private static Uri _baseUrl = new Uri("http://ryanvogel.github.io/", UriKind.Absolute);
 
         private static string _inputFile = "packages.txt";
 
@@ -41,11 +41,11 @@ namespace WrappingPaper
         }
     }
 
-    public class DataFormatter
+    public class PresentBoxDataFormatter
     {
         private string _dataString;
 
-        public DataFormatter(string dataString)
+        public PresentBoxDataFormatter(string dataString)
         {
             _dataString = dataString;
         }
