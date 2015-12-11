@@ -61,7 +61,8 @@ namespace WrappingPaper
                         var w = 0;
                         var dimensions = rec.Split('x');
 
-                        if (int.TryParse(dimensions[0], out h)
+                        if (dimensions.Length == 3
+                            && int.TryParse(dimensions[0], out h)
                             && int.TryParse(dimensions[1], out l)
                             && int.TryParse(dimensions[2], out w))
                         {
