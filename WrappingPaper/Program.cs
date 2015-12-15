@@ -91,14 +91,16 @@ namespace WrappingPaper
 
         public virtual int CalculateNeededWrappingPaper()
         {
-            var side1SqFt = (2 * Height * Length);
-            var side2SqFt = (2 * Length * Width);
-            var side3SqFt = (2 * Height * Width);
+            var side1SqFt = (Height * Length);
+            var side2SqFt = (Length * Width);
+            var side3SqFt = (Height * Width);
 
             var sidesSqFt = new List<int> { side1SqFt, side2SqFt, side3SqFt };
             var extraSqFt = sidesSqFt.Min();
 
-            var neededSqFt = (side1SqFt + side2SqFt + side3SqFt + extraSqFt);
+            Func<int, int> x2 = (x) => 2 * x;
+
+            var neededSqFt = (x2(side1SqFt) + x2(side2SqFt) + x2(side3SqFt) + extraSqFt);
 
             return neededSqFt;
         }
